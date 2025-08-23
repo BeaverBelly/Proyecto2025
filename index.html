@@ -66,6 +66,27 @@
                 <li>💧 Suministran agua potable a más de mil millones de personas en todo el mundo.</li>
             </ul>
         </section>
+
+        <!--La funcionalidad del "for" y el "id" es poder clickear en el nombre del label y que automáticamente se posicione dentro del input. -->
+        <!--la funcionalidad del "name" es hacer de referente cuando se hace el submit, haciendo que php reciba un valor-clave (clave = name y valor = dato ingresado)-->
+        <section>
+          <form action="">
+            <label for="fname">Nombre: </label>
+            <input type="text" name="fname" id="fname"><br>
+
+            <label for="lname">Apellido: </label>
+            <input type="text" name="lname" id="lname"><br>
+            
+            <label for="mail">Correo</label>
+            <input type="email" name="mail" id="mail">
+
+            <label for="celphone">Teléfono</label>
+            <input type="tel" name="celphone" id="celphone">
+
+            <input type="submit" value="submit">
+
+          </form>          
+        </section>
     </main>
 
     <footer>

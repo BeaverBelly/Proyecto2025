@@ -32,79 +32,16 @@
 
         <h2>Glaciares Emblemáticos de América del Sur</h2>
         <section>
-            <table border="5">
-                <caption>Lista de glaciares emblemáticos de América del Sur</caption>
-                <thead>
-                  <tr>
-                    <th>Nombre del Glaciar</th>
-                    <th>País</th>
-                    <th>Ubicación</th>
-                    <th>Características</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Perito Moreno</td>
-                    <td>Argentina</td>
-                    <td>Parque Nacional Los Glaciares, Santa Cruz</td>
-                    <td>Uno de los más famosos; equilibrio entre avance y retroceso</td>
-                  </tr>
-                  <tr>
-                    <td>Upsala</td>
-                    <td>Argentina</td>
-                    <td>Parque Nacional Los Glaciares, Santa Cruz</td>
-                    <td>Gran tamaño; en retroceso</td>
-                  </tr>
-                  <tr>
-                    <td>Pío XI (Brüggen)</td>
-                    <td>Chile</td>
-                    <td>Campo de Hielo Sur</td>
-                    <td>Mayor del hemisferio sur fuera de la Antártida; en avance</td>
-                  </tr>
-                  <tr>
-                    <td>San Rafael</td>
-                    <td>Chile</td>
-                    <td>Campo de Hielo Norte</td>
-                    <td>Desemboca en el mar; de los más accesibles por barco</td>
-                  </tr>
-                  <tr>
-                    <td>Chimborazo</td>
-                    <td>Ecuador</td>
-                    <td>Volcán Chimborazo</td>
-                    <td>Glaciar ecuatorial; punto más cercano al Sol</td>
-                  </tr>
-                  <tr>
-                    <td>Cotopaxi</td>
-                    <td>Ecuador</td>
-                    <td>Volcán Cotopaxi</td>
-                    <td>Ubicado en un volcán activo; retroceso acelerado</td>
-                  </tr>
-                  <tr>
-                    <td>Pastoruri</td>
-                    <td>Perú</td>
-                    <td>Cordillera Blanca</td>
-                    <td>Muy visitado; ya no activo</td>
-                  </tr>
-                  <tr>
-                    <td>Quelccaya</td>
-                    <td>Perú</td>
-                    <td>Cordillera Oriental de los Andes</td>
-                    <td>Campo de hielo tropical más grande del mundo</td>
-                  </tr>
-                  <tr>
-                    <td>Nevado del Ruiz</td>
-                    <td>Colombia</td>
-                    <td>Volcán Nevado del Ruiz</td>
-                    <td>Glaciar ecuatorial; en peligro de desaparecer</td>
-                  </tr>
-                  <tr>
-                    <td>Nevado del Cocuy</td>
-                    <td>Colombia</td>
-                    <td>Sierra Nevada del Cocuy</td>
-                    <td>Conjunto de glaciares en retroceso</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div id="TablaPagGlaciares">
+          <script>
+            fetch("PHP/TablaGlaciaresEmblematicos.php")
+              .then(res => res.text())
+              .then(html =>{
+                document.getElementById("TablaPagGlaciares").innerHTML = html;
+              })  
+              .catch(err => console.error("Error cargando la tabla", err));
+          </script>
+          </div>
         </section>
         
         <section>

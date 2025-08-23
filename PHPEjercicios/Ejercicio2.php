@@ -1,4 +1,4 @@
-<?php
+    <?php
     $ciudades =[
         ["nombre" => "New York",      "codigo" => "NY", "poblacion" => 8175133],
         ["nombre" => "Los Ángeles",   "codigo" => "CA", "poblacion" => 3792621],
@@ -21,7 +21,7 @@
     return strcasecmp($a[$orden], $b[$orden]); // texto: nombre/codigo
     });
 
-    echo "<table border = '1'>";
+    echo "<table>";
     
     echo "<tr>
     <th><a href= '?orden=nombre'>Ciudad</a></th>
