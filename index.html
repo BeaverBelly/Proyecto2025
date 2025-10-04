@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="preload" href="CSS/Normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-    <link rel="preload" href="/CSS/Normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
     <link rel="stylesheet" href="CSS/Styles.css">
 
     <title>Proyecto 2025</title>
@@ -17,12 +15,7 @@
 </head>
 <body>
 
-<link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
-
-    <header>
-        <h1>Glaciares y su importancia en el mundoooooooooo</h1>
-        <h2>El poder del cambio de las herramientas digitales</h2>
-    </header>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     
     <nav class="navegacionPrincipal">
         <a href="index.html">inicio</a>
@@ -41,7 +34,7 @@
         <section>
             <h2>¿Por qué son importantes los glaciares?</h2>
             
-            <img src="/Recursos/Imagen 1 Glaciar.jpg" alt="imagen de un Glaciar" width="300">
+            <img src="Recursos/Imagen 1 Glaciar.jpg" class="img-fluid" alt="imagen de un Glaciar" width="300">
             
             <p>Los glaciares son masas de hielo de gran tamaño que se han formado a lo largo de miles de años a partir de la acumulación y compactación de la nieve. Son una de las principales reservas de agua dulce del planeta, almacenando aproximadamente el 70% de toda el agua dulce disponible en la Tierra. Además, desempeñan un papel clave en la regulación del clima global al reflejar la radiación solar y mantener temperaturas más frías en diversas regiones.</p>
 
@@ -74,21 +67,29 @@
 
         <!--La funcionalidad del "for" y el "id" es poder clickear en el nombre del label y que automáticamente se posicione dentro del input. -->
         <!--la funcionalidad del "name" es hacer de referente cuando se hace el submit, haciendo que php reciba un valor-clave (clave = name y valor = dato ingresado)-->
-        <section>
-          <form id = "FormSolicitud">
-            <label for="fname">Nombre: </label>
-            <input type="text" name="fname" id="fname"><br>
+        <section class="container my-2  py-2 " >
+          <form id = "FormSolicitud" class="p-4 border rounded bg-light">
+            <div class="mb-3">
+                <label for="fname" class="form-label" >Nombre: </label>
+                <input type="text" class="form-control" name="fname" id="fname">
+            </div>
 
-            <label for="lname">Apellido: </label>
-            <input type="text" name="lname" id="lname"><br>
+            <div class="mb-3">
+                <label for="lname" class="form-label" >Apellido: </label>
+                <input type="text" class="form-control" name="lname" id="lname">
+            </div>
+         
+            <div class="mb-3">
+                <label for="mail" class="form-label" >Correo</label>
+                <input type="email" class="form-control" name="mail" id="mail">
+            </div>
             
-            <label for="mail">Correo</label>
-            <input type="email" name="mail" id="mail">
+            <div class="mb-3">
+                <label for="celphone" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" name="celphone" id="celphone">
+            </div>
 
-            <label for="celphone">Teléfono</label>
-            <input type="tel" name="celphone" id="celphone">
-
-            <input type="submit" value="submit">
+            <input type="submit" class="btn btn-primary w-100" value="Enviar">
 
           </form>          
         </section>
