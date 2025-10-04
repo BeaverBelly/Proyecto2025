@@ -6,7 +6,7 @@
 
     <link rel="preload" href="CSS/Normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/Styles.css">
+    <!--<link rel="stylesheet" href="CSS/Styles.css"> -->
 
     <title>Proyecto 2025</title>
 
@@ -17,15 +17,22 @@
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     
-    <nav class="navegacionPrincipal">
-        <a href="index.html">inicio</a>
-        
-        <a href="Amenazas Actuales.html">Amenazas actuales</a>
-        
-        <a href="Glaciares emblemáticos de América del Sur.html">Glaciares de América</a>
-        
-        <a href="Medidas de Protección.html">Medidas de protección</a>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Proyecto 2025</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Amenazas Actuales.html">Amenazas actuales</a></li>
+        <li class="nav-item"><a class="nav-link" href="Glaciares emblemáticos de América del Sur.html">Glaciares de América</a></li>
+        <li class="nav-item"><a class="nav-link" href="Medidas de Protección.html">Medidas de protección</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <p>Este sitio está dedicado a explorar el valor ecológico, social y climático de los glaciares del mundo. A través de nuestras secciones aprenderás sobre sus amenazas, su importancia y las medidas que se están tomando para protegerlos.</p>
 
@@ -95,9 +102,11 @@
         </section>
     </main>
 
-    <footer>
-        <p>Visita <a href="https://sites.google.com/view/cuadernodecampofmt/inicio" title="CuadernoCampo" target="_blank">Cuaderno de Campo</a> Para más información</p>
-        <p>Proyecto realizado por Emanuel, Florencia y Franco - Año 2025.</p>
+    <footer class="class="py-4 site-footer">
+        <div class="container text-center">
+            <p>Visita <a href="https://sites.google.com/view/cuadernodecampofmt/inicio" title="CuadernoCampo" target="_blank" rel="noopener">Cuaderno de Campo</a> Para más información.</p>
+            <p class="mb-0">Proyecto realizado por Emanuel, Florencia y Franco - Año 2025.</p>
+        </div>
     </footer>
 
 </body>
