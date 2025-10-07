@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto 2025: importancia, amenazas y protección de los glaciares.">
 
     <link rel="preload" href="CSS/Normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -15,12 +16,12 @@
 </head>
 <body>
 
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
     
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="index.html">Proyecto 2025</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="mainNav" class="collapse navbar-collapse">
@@ -33,76 +34,194 @@
   </div>
 </nav>
 
+<header class="bg-body-tertiary border-bottom">
+  <div class="container py-4">
+    <h1 class="h3 mb-2">Proyecto 2025 — Glaciares</h1>
+    <p class="lead mb-0">
+      Este sitio está dedicado a explorar el valor ecológico, social y climático de los glaciares del mundo.
+      A través de nuestras secciones aprenderás sobre sus amenazas, su importancia y las medidas que se están tomando para protegerlos.
+    </p>
+  </div>
+</header>
 
-    <p>Este sitio está dedicado a explorar el valor ecológico, social y climático de los glaciares del mundo. A través de nuestras secciones aprenderás sobre sus amenazas, su importancia y las medidas que se están tomando para protegerlos.</p>
-
-    <main>
+    <main class="container my-5">
         
-        <section>
-            <h2>¿Por qué son importantes los glaciares?</h2>
-            
-            <img src="Recursos/Imagen 1 Glaciar.jpg" class="img-fluid" alt="imagen de un Glaciar" width="300">
-            
-            <p>Los glaciares son masas de hielo de gran tamaño que se han formado a lo largo de miles de años a partir de la acumulación y compactación de la nieve. Son una de las principales reservas de agua dulce del planeta, almacenando aproximadamente el 70% de toda el agua dulce disponible en la Tierra. Además, desempeñan un papel clave en la regulación del clima global al reflejar la radiación solar y mantener temperaturas más frías en diversas regiones.</p>
+<section class="row align-items-center g-4 mb-5">
+  <!-- Columna de texto -->
+  <div class="col-md-6">
+    <h2>¿Por qué son importantes los glaciares?</h2>
 
-            <h3>¿Cual es su impacto en el medio ambiente?</h3>
+    <p>Los glaciares son masas de hielo de gran tamaño que se han formado a lo largo de miles de años a partir de la acumulación y compactación de la nieve. Son una de las principales reservas de agua dulce del planeta, almacenando aproximadamente el 70% de toda el agua dulce disponible en la Tierra. Además, desempeñan un papel clave en la regulación del clima global al reflejar la radiación solar y mantener temperaturas más frías en diversas regiones.</p>
 
-            <p>El derretimiento de los glaciares tiene consecuencias directas e indirectas en el medio ambiente. Por un lado, contribuye al aumento del nivel del mar, lo cual amenaza comunidades costeras en todo el mundo. Por otro lado, altera los ecosistemas acuáticos y terrestres, afectando a especies que dependen de aguas frías y a comunidades humanas que utilizan el agua glaciar para consumo, riego o energía hidroeléctrica.</p>
+    <h3 class="h4 mt-4">¿Cuál es su impacto en el medio ambiente?</h3>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Aumento del nivel del mar que amenaza comunidades costeras.</li>
+      <li class="list-group-item">Alteración de ecosistemas acuáticos y terrestres fríos.</li>
+      <li class="list-group-item">Impacto en comunidades que dependen del agua glaciar para consumo, riego y energía.</li>
+    </ul>
 
-            <h3>¿Por qué debemos protegerlos?</h3>
+    <h3 class="h4">¿Por qué debemos protegerlos?</h3>
+    <ul class="list-group">
+      <li class="list-group-item">Fuente vital de agua dulce para millones de personas.</li>
+      <li class="list-group-item">Su desaparición acelera el cambio climático global.</li>
+      <li class="list-group-item">La pérdida genera desequilibrios ecológicos y pone en riesgo especies.</li>
+      <li class="list-group-item">Indicadores naturales del estado del clima del planeta.</li>
+      <li class="list-group-item">Patrimonio natural y paisajístico de la humanidad.</li>
+    </ul>
+  </div>
 
-            <ul> 
-                <li>Porque son una fuente vital de agua dulce para millones de personas.</li>
-                <li>Porque su desaparición acelera el cambio climático global.</li>
-                <li>Porque su pérdida genera desequilibrios ecológicos y pone en riesgo a múltiples especies</li>
-                <li>Porque son indicadores naturales del estado del clima en el planeta.</li>
-                <li>Porque forman parte del patrimonio natural y paisajístico de la humanidad.</li>
-            </ul>
+  <!-- Columna de imagen -->
+  <div class="col-md-6">
+    <figure class="text-center">
+      <img
+        src="Recursos/Imagen 1 Glaciar.jpg"
+        class="img-fluid rounded shadow-sm"
+        alt="Vista panorámica de un glaciar"
+        width="600"
+        loading="lazy"
+      >
+      <figcaption class="form-text mt-2">Los glaciares almacenan gran parte del agua dulce del planeta.</figcaption>
+    </figure>
+  </div>
+</section>
 
-        </section>
+<section class="mb-5">
+  <h2 class="mb-4">Datos clave sobre los glaciares</h2>
 
-        <section>
-            <h2>Datos clave sobre los glaciares</h2>
-            <ul>
-                <li>❄️ El 70% del agua dulce del planeta se encuentra en glaciares.</li>
-                <li>🌍 Cubren aproximadamente el 10% de la superficie terrestre.</li>
-                <li>📉 Muchos glaciares han perdido más del 50% de su masa en los últimos 50 años.</li>
-                <li>🌡️ Son indicadores sensibles del cambio climático global.</li>
-                <li>💧 Suministran agua potable a más de mil millones de personas en todo el mundo.</li>
-            </ul>
-        </section>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <!-- Tarjeta 1 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title h5">❄️ Agua dulce</h3>
+          <p class="card-text">El 70% del agua dulce del planeta se encuentra en glaciares.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title h5">🌍 Cobertura</h3>
+          <p class="card-text">Cubren aproximadamente el 10% de la superficie terrestre.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title h5">📉 Pérdida de masa</h3>
+          <p class="card-text">Muchos glaciares han perdido más del 50% de su masa en los últimos 50 años.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title h5">🌡️ Sensibilidad</h3>
+          <p class="card-text">Son indicadores sensibles del cambio climático global.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title h5">💧 Abastecimiento</h3>
+          <p class="card-text">Suministran agua potable a más de mil millones de personas en todo el mundo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <!--La funcionalidad del "for" y el "id" es poder clickear en el nombre del label y que automáticamente se posicione dentro del input. -->
         <!--la funcionalidad del "name" es hacer de referente cuando se hace el submit, haciendo que php reciba un valor-clave (clave = name y valor = dato ingresado)-->
-        <section class="container my-2  py-2 " >
-          <form id = "FormSolicitud" class="p-4 border rounded bg-light">
-            <div class="mb-3">
-                <label for="fname" class="form-label" >Nombre: </label>
-                <input type="text" class="form-control" name="fname" id="fname">
-            </div>
+<section class="my-5">
+  <h2 class="h4 mb-1">Contacto</h2>
+  <p class="text-body-secondary mb-3">Dejanos tus datos y te escribimos.</p>
 
-            <div class="mb-3">
-                <label for="lname" class="form-label" >Apellido: </label>
-                <input type="text" class="form-control" name="lname" id="lname">
-            </div>
-         
-            <div class="mb-3">
-                <label for="mail" class="form-label" >Correo</label>
-                <input type="email" class="form-control" name="mail" id="mail">
-            </div>
-            
-            <div class="mb-3">
-                <label for="celphone" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" name="celphone" id="celphone">
-            </div>
+  <form id="FormSolicitud" class="p-4 border rounded bg-light needs-validation" novalidate>
+    <div class="row g-3">
+      <!-- Nombre -->
+      <div class="col-md-6">
+        <label for="fname" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          name="fname"
+          id="fname"
+          required
+          autocomplete="given-name"
+        >
+        <div class="invalid-feedback">Ingresá tu nombre.</div>
+      </div>
 
-            <input type="submit" class="btn btn-primary w-100" value="Enviar">
+      <!-- Apellido -->
+      <div class="col-md-6">
+        <label for="lname" class="form-label">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          name="lname"
+          id="lname"
+          required
+          autocomplete="family-name"
+        >
+        <div class="invalid-feedback">Ingresá tu apellido.</div>
+      </div>
 
-          </form>          
-        </section>
+      <!-- Correo -->
+      <div class="col-md-6">
+        <label for="mail" class="form-label">Correo</label>
+        <input
+          type="email"
+          class="form-control"
+          name="mail"
+          id="mail"
+          required
+          autocomplete="email"
+          placeholder="nombre@ejemplo.com"
+        >
+        <div class="invalid-feedback">Ingresá un correo válido.</div>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="col-md-6">
+        <label for="celphone" class="form-label">Teléfono (opcional)</label>
+        <input
+          type="tel"
+          class="form-control"
+          name="celphone"
+          id="celphone"
+          inputmode="tel"
+          autocomplete="tel"
+          pattern="[\d+\-\s()]{6,}"
+          placeholder="+598 99 123 456"
+          aria-describedby="telHelp"
+        >
+        <div id="telHelp" class="form-text">Formato sugerido: +598 99 123 456</div>
+        <div class="invalid-feedback">Usá un formato de teléfono válido.</div>
+      </div>
+
+      <!-- Botón -->
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+      </div>
+    </div>
+  </form>
+</section>
+
     </main>
 
-    <footer class="class="py-4 site-footer">
+    <footer class="py-4 bg-dark text-light">
         <div class="container text-center">
             <p>Visita <a href="https://sites.google.com/view/cuadernodecampofmt/inicio" title="CuadernoCampo" target="_blank" rel="noopener">Cuaderno de Campo</a> Para más información.</p>
             <p class="mb-0">Proyecto realizado por Emanuel, Florencia y Franco - Año 2025.</p>

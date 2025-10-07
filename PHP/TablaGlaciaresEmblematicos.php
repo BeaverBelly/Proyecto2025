@@ -1,52 +1,41 @@
 <?php
-    $glaciares = [
-        ["nombre" => "Perito Moreno", "pais" => "Argentina", "ubicacion" => "Parque Nacional Los Glaciares, Santa Cruz", "caracteristicas" => "Uno de los más famosos; equilibrio entre avance y retroceso" ],
-        
-        ["nombre" => "Upsala", "pais" => "Argentina", "ubicacion" => "Parque Nacional Los Glaciares, Santa Cruz", "caracteristicas" => "Gran tamaño; en retroceso" ],
-        
-        ["nombre" => "Pío XI (Brüggen)", "pais" => "Chile", "ubicacion" => "Campo de Hielo Sur", "caracteristicas" => "Uno de los más famosos; equilibrio entre avance y retroceso" ],
-        
-        ["nombre" => "San Rafael", "pais" => "Chile", "ubicacion" => "PCampo de Hielo Norte", "caracteristicas" => "Desemboca en el mar; de los más accesibles por barco" ],
-        
-        ["nombre" => "Chimborazo", "pais" => "Ecuador", "ubicacion" => "Volcán Chimborazo", "caracteristicas" => "Glaciar ecuatorial; punto más cercano al Sol" ],
-        
-        ["nombre" => "Cotopaxi", "pais" => "Ecuador", "ubicacion" => "Volcán Cotopaxi", "caracteristicas" => "Ubicado en un volcán activo; retroceso acelerado" ],
-        
-        ["nombre" => "Pastoruri", "pais" => "Perú", "ubicacion" => "Cordillera Oriental de los Andes", "caracteristicas" => "Campo de hielo tropical más grande del mundo" ],
-        
-        ["nombre" => "Quelccaya", "pais" => "Perú", "ubicacion" => "Cordillera Oriental de los Andes", "caracteristicas" => "Campo de hielo tropical más grande del mundo" ],
+// Encabezado para HTML y UTF-8
+header('Content-Type: text/html; charset=UTF-8');
 
-        ["nombre" => "Nevado del Ruiz", "pais" => "Colombia", "ubicacion" => "Volcán Nevado del Ruiz", "caracteristicas" => "Glaciar ecuatorial; en peligro de desaparecer" ],
-       
-        ["nombre" => "Nevado del Cocuy", "pais" => "Colombia", "ubicacion" => "Sierra Nevada del Cocuy", "caracteristicas" => "Conjunto de glaciares en retroceso" ]
-    ];
-    
-    echo"<table border = '1'>";
-    
-    echo"<caption>Lista de glaciares emblemáticos de América del Sur</caption>";
+// Datos
+$glaciares = [
+  ["nombre" => "Perito Moreno", "pais" => "Argentina", "ubicacion" => "Parque Nacional Los Glaciares, Santa Cruz", "caracteristicas" => "Famoso por su equilibrio entre avance y retroceso"],
+  ["nombre" => "Upsala", "pais" => "Argentina", "ubicacion" => "Parque Nacional Los Glaciares, Santa Cruz", "caracteristicas" => "Uno de los más grandes de Argentina; en retroceso"],
+  ["nombre" => "Pío XI (Brüggen)", "pais" => "Chile", "ubicacion" => "Campo de Hielo Sur", "caracteristicas" => "El glaciar más grande de Sudamérica; con periodos de avance"],
+  ["nombre" => "San Rafael", "pais" => "Chile", "ubicacion" => "Campo de Hielo Norte", "caracteristicas" => "Desemboca en el mar; accesible por barco"],
+  ["nombre" => "Chimborazo", "pais" => "Ecuador", "ubicacion" => "Volcán Chimborazo", "caracteristicas" => "Glaciar ecuatorial; cumbre más cercana al Sol por abultamiento ecuatorial"],
+  ["nombre" => "Cotopaxi", "pais" => "Ecuador", "ubicacion" => "Volcán Cotopaxi", "caracteristicas" => "Glaciar en volcán activo; retroceso acelerado"],
+  ["nombre" => "Pastoruri", "pais" => "Perú", "ubicacion" => "Cordillera Blanca, Parque Nacional Huascarán", "caracteristicas" => "Glaciar tropical en fuerte retroceso; sitio turístico regulado"],
+  ["nombre" => "Quelccaya", "pais" => "Perú", "ubicacion" => "Cordillera Oriental de los Andes", "caracteristicas" => "El campo de hielo tropical más grande del mundo"],
+  ["nombre" => "Nevado del Ruiz", "pais" => "Colombia", "ubicacion" => "Volcán Nevado del Ruiz", "caracteristicas" => "Glaciar ecuatorial; en riesgo de desaparecer"],
+  ["nombre" => "Nevado del Cocuy", "pais" => "Colombia", "ubicacion" => "Sierra Nevada del Cocuy", "caracteristicas" => "Conjunto de glaciares en retroceso"]
+];
 
-    echo
-        "<thead>
-        <tr>
-            <th>Nombre</th>
-            <th>País</th>
-            <th>Ubicación</th>
-            <th>Características</th>
-        </tr>
-        </thead>";
+// Render seguro
+function e($s) { return htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); }
 
-    echo"<tbody>";
+echo '<div class="table-responsive">';
+echo '<table class="table table-striped table-hover align-middle">';
+echo '<caption class="caption-top">Glaciares emblemáticos de América del Sur</caption>';
+echo '<thead><tr>';
+echo '<th scope="col">Nombre</th>';
+echo '<th scope="col">País</th>';
+echo '<th scope="col">Ubicación</th>';
+echo '<th scope="col">Características</th>';
+echo '</tr></thead>';
 
-    foreach ($glaciares as $glaciar) {
-        echo"<tr>";
-            echo"<td>{$glaciar['nombre']}</td>";
-            echo"<td>{$glaciar['pais']}</td>";
-            echo"<td>{$glaciar['ubicacion']}</td>";
-            echo"<td>{$glaciar['caracteristicas']}</td>";
-        echo"</tr>";
-    }
-    
-    echo"</tbody>";
-    echo"</table>";
-
-?>
+echo '<tbody>';
+foreach ($glaciares as $g) {
+  echo '<tr>';
+  echo '<td>' . e($g['nombre']) . '</td>';
+  echo '<td>' . e($g['pais']) . '</td>';
+  echo '<td>' . e($g['ubicacion']) . '</td>';
+  echo '<td>' . e($g['caracteristicas']) . '</td>';
+  echo '</tr>';
+}
+echo '</tbody></table></div>';

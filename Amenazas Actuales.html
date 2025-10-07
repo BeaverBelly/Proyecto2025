@@ -1,87 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Amenazas actuales a los glaciares: calentamiento global, emisiones y más. Proyecto 2025.">
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     
     <link rel="preload" href="CSS/Normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <link rel="stylesheet" href="CSS/Styles.css">
     
     <title>Amenazas Actuales</title>
 
 </head>
 <body>
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
-    <header>
-        <h1>Amenazas Actuales</h1>
-    </header>
+<header class="bg-body-tertiary border-bottom">
+  <div class="container py-5">
+    <h1 class="display-6 fw-semibold mb-0">Amenazas actuales</h1>
+  </div>
+</header>
 
-    <nav class="navegacionPrincipal">
-        <a href="index.html">inicio</a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Proyecto 2025</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-expanded="false" aria-label="Alternar navegación" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Amenazas Actuales.html">Amenazas actuales</a></li>
+        <li class="nav-item"><a class="nav-link" href="Glaciares emblemáticos de América del Sur.html" >Glaciares de América</a></li>
+        <li class="nav-item"><a class="nav-link" href="Medidas de Protección.html">Medidas de protección</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+
+    <section>
+    <h2>¿Qué amenaza los glaciares?</h2>
+
+    <img src="Imagenes/collage-amenazas.jpg" class="img-fluid rounded shadow-sm my-3" alt="Collage con imágenes representativas de las amenazas a los glaciares" loading="lazy">
+
+    <h3 class="h4 mb-3">Principales amenazas</h3>
         
-        <a href="Amenazas Actuales.html">Amenazas actuales</a>
+    <ul class="list-group list-group-flush shadow-sm mb-4">
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#calentamiento-global">Calentamiento global</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#cambios-precipitacion">Cambios en los patrones de precipitación</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#emisiones-geh">Emisiones de gases de efecto invernadero</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#hollin-y-polvo">Deposición de hollín y polvo</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#actividades-humanas">Actividades humanas cercanas</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#incendios-forestales">Incendios forestales</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#contaminacion-aire">Contaminación del aire</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#cambios-regionales">Cambios climáticos regionales</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#perdida-ecosistemas">Pérdida de ecosistemas circundantes</a></li>
+        <li class="list-group-item list-group-item-action"><a class="link-body-emphasis text-decoration-none" href="#sobreexplotacion-hidrica">Sobreexplotación de recursos hídricos</a></li>
+    </ul>
+
+    <p class="mt-3 mb-5">
+    A continuación se desarrollan algunos puntos de los planteados anteriormente.
+    </p>
+
+    <h3 id="calentamiento-global">Calentamiento global</h3>
+        <p>El calentamiento global es la principal causa del retroceso de los glaciares. A medida que la temperatura media del planeta aumenta debido al exceso de gases de efecto invernadero, los glaciares se derriten a una velocidad alarmante. Esta pérdida de masa glaciar contribuye al aumento del nivel del mar y a la alteración de ecosistemas sensibles.</p>
+
+    <div class="alert alert-info mt-3 shadow-sm" role="alert">
+        🌡️ <strong>Dato clave:</strong> El IPCC estima que, si las emisiones continúan al ritmo actual, 
+        los glaciares podrían perder hasta un 80% de su masa para el año 2100.
+    </div>
+
+    <h3 id="emisiones-geh">Emisiones de gases de efecto invernadero</h3>
+        <p>Los gases de efecto invernadero, como el dióxido de carbono (CO₂) y el metano (CH₄), atrapan el calor en la atmósfera. La principal fuente de estas emisiones es la actividad humana: quema de combustibles fósiles, agricultura intensiva e industrias contaminantes. Estos gases intensifican el efecto invernadero natural, elevando la temperatura y acelerando la pérdida de glaciares.</p>
+
+    <div class="alert alert-warning mt-3 shadow-sm" role="alert">
+        ☁️ <strong>Sabías que…</strong> el CO₂ representa más del 75% de las emisiones globales de gases de efecto invernadero. 
+        El transporte y la generación de energía son los principales responsables.
+    </div>        
+            
+    <h3 id="hollin-y-polvo">Deposición de hollín y polvo</h3>
+        <p>Cuando partículas oscuras como el hollín y el polvo se depositan sobre la superficie de los glaciares, reducen su capacidad de reflejar la luz solar (albedo). Esto hace que absorban más calor y se derritan más rápidamente. Gran parte de estas partículas provienen de incendios forestales, industria y combustión de biomasa.</p>
+
+    <div class="alert alert-info mt-3 shadow-sm" role="alert">
+        🧱 <strong>Dato curioso:</strong> una fina capa de polvo oscuro puede reducir hasta un 15% la capacidad de reflejar 
+        la radiación solar en un glaciar.
+    </div>
+
+    <h3 id="incendios-forestales">Incendios forestales</h3>
+        <p>El aumento de incendios forestales en zonas cercanas a cordilleras y ecosistemas montañosos genera grandes cantidades de humo, hollín y dióxido de carbono. Esto impacta a los glaciares tanto directamente (por deposición de partículas) como indirectamente, al contribuir al calentamiento global.</p>
+
+    <div class="alert alert-danger mt-3 shadow-sm" role="alert">
+        🔥 <strong>Advertencia:</strong> los incendios forestales de 2023 liberaron más CO₂ que toda la industria       de la aviación mundial.
+    </div> 
         
-        <a href="Glaciares emblemáticos de América del Sur.html">Glaciares de América</a>
-        
-        <a href="Medidas de Protección.html">Medidas de protección</a>
-    </nav>
+    <h3 id="perdida-ecosistemas">Pérdida de ecosistemas circundantes</h3>
+        <p>Los glaciares forman parte de ecosistemas frágiles donde viven especies adaptadas al frío extremo. Cuando estos ecosistemas son degradados por deforestación, urbanización o ganadería intensiva, también se pierde la cobertura vegetal que ayuda a regular el clima local, acelerando el derretimiento glaciar.</p>
 
-    <main>
+    <div class="alert alert-success mt-3 shadow-sm" role="alert">
+        🌱 <strong>Acción positiva:</strong> la reforestación en zonas andinas ayuda a reducir la erosión y estabilizar los microclimas glaciares.
+    </div>    
+            
+    <h3 id="actividades-humanas">Actividades humanas cercanas</h3>
+        <p>La construcción de infraestructuras, la minería, el turismo desregulado y otras actividades humanas cerca de zonas glaciares generan calor, contaminantes y disturbios físicos en el entorno natural. Esto afecta no solo al glaciar en sí, sino también a su capacidad de regenerarse y cumplir su rol en el ciclo hidrológico.</p>
 
-        <section>
-            <h2>¿Qué amenaza los Glaciares?</h2>
-            
-            <img src="" alt=""> <!--Hacer un collage y subirlo a carpeta "Imagenes"-->
-            
-            <ul>
-                <li>Calentamiento global</li>
-                <li>Cambios en los patrones de precipitación</li>
-                <li>Emisiones de gases de efecto invernadero</li>
-                <li>Deposición de hollín y polvo</li>
-                <li>Actividades humanas cercanas</li>
-                <li>Incendios forestales</li>
-                <li>Contaminación del aire</li>
-                <li>Cambios climáticos regionales</li>
-                <li>Pérdida de ecosistemas circundantes</li>
-                <li>Sobreexplotación de recursos hídricos</li>
-            </ul>
+    <div class="alert alert-warning mt-3 shadow-sm" role="alert">
+        🏗️ <strong>Reflexión:</strong> las áreas naturales protegidas son una herramienta clave para reducir la presión humana 
+        sobre ecosistemas glaciares.
+    </div>
 
-            <p>A continuación se desarrollan algunos puntos de los planteados anteriormente</p>
-            
-            <h2>Calentamiento global</h2>
-            <p>El calentamiento global es la principal causa del retroceso de los glaciares. A medida que la temperatura media del planeta aumenta debido al exceso de gases de efecto invernadero, los glaciares se derriten a una velocidad alarmante. Esta pérdida de masa glaciar contribuye al aumento del nivel del mar y a la alteración de ecosistemas sensibles.</p>
-            
-            <h2>Emisiones de gases de efecto invernadero</h2>
-            <p>Los gases de efecto invernadero, como el dióxido de carbono (CO₂) y el metano (CH₄), atrapan el calor en la atmósfera. La principal fuente de estas emisiones es la actividad humana: quema de combustibles fósiles, agricultura intensiva e industrias contaminantes. Estos gases intensifican el efecto invernadero natural, elevando la temperatura y acelerando la pérdida de glaciares.</p>
-            
-            <h2>Deposición de hollín y polvo</h2>
-            <p>Cuando partículas oscuras como el hollín y el polvo se depositan sobre la superficie de los glaciares, reducen su capacidad de reflejar la luz solar (albedo). Esto hace que absorban más calor y se derritan más rápidamente. Gran parte de estas partículas provienen de incendios forestales, industria y combustión de biomasa.</p>
-            
-            <h2>Incendios forestales</h2>
-            <p>El aumento de incendios forestales en zonas cercanas a cordilleras y ecosistemas montañosos genera grandes cantidades de humo, hollín y dióxido de carbono. Esto impacta a los glaciares tanto directamente (por deposición de partículas) como indirectamente, al contribuir al calentamiento global.</p>
-            
-            <h2>Pérdida de ecosistemas circundantes</h2>
-            <p>Los glaciares forman parte de ecosistemas frágiles donde viven especies adaptadas al frío extremo. Cuando estos ecosistemas son degradados por deforestación, urbanización o ganadería intensiva, también se pierde la cobertura vegetal que ayuda a regular el clima local, acelerando el derretimiento glaciar.</p>
-            
-            <h2>Actividades humanas cercanas</h2>
-            <p>La construcción de infraestructuras, la minería, el turismo desregulado y otras actividades humanas cerca de zonas glaciares generan calor, contaminantes y disturbios físicos en el entorno natural. Esto afecta no solo al glaciar en sí, sino también a su capacidad de regenerarse y cumplir su rol en el ciclo hidrológico.</p>
+    <h3 id="cambios-precipitacion" class="visually-hidden">Cambios en los patrones de precipitación</h3>
+    <h3 id="contaminacion-aire" class="visually-hidden">Contaminación del aire</h3>
+    <h3 id="cambios-regionales" class="visually-hidden">Cambios climáticos regionales</h3>
+    <h3 id="sobreexplotacion-hidrica" class="visually-hidden">Sobreexplotación de recursos hídricos</h3>
 
-        </section>
+    </section>
 
-        <section>
-            <h2>Conclusión</h2>
-            <p>Los glaciares están en peligro por múltiples factores, la mayoría de ellos causados por el ser humano. Comprender estas amenazas es el primer paso para tomar conciencia y promover acciones que ayuden a proteger estos valiosos recursos naturales.</p>
-        </section>
+<section class="mt-5 p-4 bg-light border-start border-4 border-primary rounded shadow-sm">
+  <h2 class="h4 mb-3">Conclusión</h2>
+  <p class="mb-0">
+    Los glaciares están en peligro por múltiples factores, la mayoría de ellos causados por el ser humano.
+    Comprender estas amenazas es el primer paso para tomar conciencia y promover acciones que ayuden a proteger estos valiosos recursos naturales.
+  </p>
+</section>
+</main>
 
-    </main>
-
-    <footer>
-        <p>Visita <a href="https://sites.google.com/view/cuadernodecampofmt/inicio" title="CuadernoCampo" target="_blank">Cuaderno de Campo</a> Para más información</p>
-
+    <footer class="py-4 bg-dark text-light">
+        <div class="container text-center">
+            <p>Visita <a href="https://sites.google.com/view/cuadernodecampofmt/inicio" title="CuadernoCampo" target="_blank" rel="noopener">Cuaderno de Campo</a> Para más información.</p>
+            <p class="mb-0">Proyecto realizado por Emanuel, Florencia y Franco - Año 2025.</p>
+        </div>
     </footer>
 
 </body>
