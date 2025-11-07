@@ -1,0 +1,117 @@
+/* ===========================================================
+   TEMA GLACIAR - Maquillaje visual sobre Bootstrap (v3)
+   =========================================================== */
+
+/* ===== Paleta glaciar ===== */
+:root {
+  --bs-body-bg: #e9f5fb;
+  --bs-body-color: #274c63;
+  --bs-primary: #4cb3e8;
+  --bs-primary-rgb: 76,179,232;
+  --bs-secondary: #a8d8f0;
+  --bs-secondary-rgb: 168,216,240;
+  --bs-info: #7fd4f7;
+  --bs-success: #74c0c9;
+  --bs-warning: #f9c74f;
+  --bs-danger: #f3722c;
+  --bs-dark: #0a5ea8;
+  --bs-border-color: #cde6f5;
+}
+
+/* ===== Fondo general ===== */
+body {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* ===== Fondo principal suavizado ===== */
+main {
+  background: linear-gradient(180deg, #fafdff 0%, #ffffff 100%);
+}
+
+/* ===== Navbar azul glaciar ===== */
+.navbar-dark.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+/* Colores de texto en navbar */
+.navbar-dark {
+  --bs-navbar-color: rgba(255,255,255,.9);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: var(--bs-navbar-color) !important;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .nav-link:hover {
+  color: var(--bs-navbar-hover-color) !important;
+}
+
+/* Página activa: resaltado sutil, sin subrayado */
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+  color: #ffffff !important;
+  font-weight: 600;
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+}
+
+/* Ajuste para el ícono del menú móvil */
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(1) opacity(.9);
+}
+
+/* ===== Cards ===== */
+.card {
+  border: 1px solid var(--bs-border-color);
+  background: #fafdff;
+  box-shadow: 0 0 8px rgba(10,94,168,0.08);
+}
+
+.card .card-title {
+  color: var(--bs-dark);
+}
+
+/* ===== Enlaces fuera de la navbar ===== */
+main a, header a:not(.navbar-brand), footer a {
+  color: var(--bs-dark);
+}
+main a:hover, header a:not(.navbar-brand):hover, footer a:hover {
+  color: var(--bs-primary);
+}
+
+/* ===== Botones ===== */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+}
+
+/* ===== Tablas ===== */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  --bs-table-accent-bg: rgba(76,179,232,.05);
+}
+.table thead th {
+  color: var(--bs-dark);
+}
+
+/* ===== Header y footer con degradados suaves ===== */
+header.bg-body-tertiary {
+  background: linear-gradient(180deg, #f6fbff 0%, #ffffff 85%);
+}
+
+footer.bg-dark {
+  background: linear-gradient(180deg, #0a5ea8 0%, #084a87 100%);
+  color: #f1f7fb;
+}
+footer a { color: #b9dcf5; }
+footer a:hover { color: #ffffff; }
