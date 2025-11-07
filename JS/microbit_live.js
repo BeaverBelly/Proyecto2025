@@ -1,5 +1,5 @@
 // Endpoint PHP que devuelve JSON { items: [{ timestamp, value }, ...] }
-const ENDPOINT = "PHP/microbit_latest.php";  // cambialo si tu PHP tiene otro nombre
+const ENDPOINT = "PHP/microbit_latest.php";  // nombre del PHP
 const INTERVAL_MS = 2000;   // frecuencia de actualización
 const MAX_POINTS  = 100;    // puntos en gráfico de línea
 const MAX_ROWS    = 20;     // filas en tabla
