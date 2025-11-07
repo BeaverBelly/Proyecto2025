@@ -1,7 +1,3 @@
-// ==============================
-// JS/microbit_live.js (completo)
-// ==============================
-
 // Endpoint PHP que devuelve JSON { items: [{ timestamp, value }, ...] }
 const ENDPOINT = "PHP/microbit_latest.php";  // cambialo si tu PHP tiene otro nombre
 const INTERVAL_MS = 2000;   // frecuencia de actualización
